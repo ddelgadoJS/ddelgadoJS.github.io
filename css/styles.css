@@ -1,0 +1,22 @@
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.horizontal{
+    float: left;
+    border: 1px solid green
+}
+
+.horizontal  *{
+
+    display: inline-block;
+    margin-left: 10px;
+}
