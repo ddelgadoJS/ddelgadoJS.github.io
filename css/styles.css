@@ -1,3 +1,15 @@
+html *
+{
+   font-size: 1em !important;
+   color: #000 !important;
+   font-family: Helvetica !important;
+}
+
+.header {
+    font-weight: bold;
+    background-color: red;
+}
+
 .column {
   float: left;
   width: 33.33%;
@@ -20,3 +32,8 @@
     display: inline-block;
     margin-left: 10px;
 }
+
+#elementsList {
+	display: none;
+}
+
