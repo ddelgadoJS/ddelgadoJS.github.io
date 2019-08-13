@@ -1,0 +1,747 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+
+    <title>Desarrollo Web</title>
+    <meta name="Práctica - Semana 3" content="TEC">
+    <meta name="Daniel Delgado">
+
+    <link rel="stylesheet" href="/css/styles.css?v=1.0">
+</head>
+
+<body>
+    
+    <div id = header>
+        <h1>Práctica - Semana 3</h1>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>HTML</h2>
+                <div id="horizontal">
+                    <div>
+                        <a onclick="toggleInfo('textHeaders')" href="javascript:void(0);">Títulos de Texto</a>
+                            <div class="nonDisplay infoElement" id="textHeaders">
+                                <ul>
+                                    <li><a onclick="toggleInfo('h1Info')" href="javascript:void(0);">h1</a></li>
+                                    <div class="nonDisplay" id="h1Info">
+                                        <p><strong>Nombre:</strong> Heading 1.</p>
+                                        <p><strong>Propósito:</strong> utilizado como etiqueta de título principal.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;h1&rsaquo;Ejemplo&lsaquo;/h1&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><i>align</i> (no soportado en HTML5) especifica el alineamiento del heading. Los posibles valores son:</li>
+                                            <ul>
+                                                <li>left</li>
+                                                <li>center</li>
+                                                <li>right</li>
+                                                <li>justify</li>
+                                            </ul>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <h1 style="text-align:center;">Ejemplo</h1>
+                                    </div>
+
+                                    <li><a onclick="toggleInfo('h2Info')" href="javascript:void(0);">h2</a></li>
+                                    <div class="nonDisplay" id="h2Info">
+                                        <p><strong>Nombre:</strong> Heading 2.</p>
+                                        <p><strong>Propósito:</strong> utilizado como etiqueta de subtítulo.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;h2&rsaquo;Ejemplo&lsaquo;/h2&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><i>align</i> (no soportado en HTML5) especifica el alineamiento del heading. Los posibles valores son:</li>
+                                            <ul>
+                                                <li>left</li>
+                                                <li>center</li>
+                                                <li>right</li>
+                                                <li>justify</li>
+                                            </ul>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <h2 style="text-align:center;">Ejemplo</h2>
+                                    </div>
+
+                                    <li><a onclick="toggleInfo('h3Info')" href="javascript:void(0);">h3</a></li>
+                                    <div class="nonDisplay" id="h3Info">
+                                        <p><strong>Nombre:</strong> Heading 3.</p>
+                                        <p><strong>Propósito:</strong> utilizado como etiqueta de subtítulo.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;h3&rsaquo;Ejemplo&lsaquo;/h3&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><i>align</i> (no soportado en HTML5) especifica el alineamiento del heading. Los posibles valores son:</li>
+                                            <ul>
+                                                <li>left</li>
+                                                <li>center</li>
+                                                <li>right</li>
+                                                <li>justify</li>
+                                            </ul>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <h3 style="text-align:center;">Ejemplo</h3>
+                                    </div>
+
+                                    <li><a onclick="toggleInfo('h4Info')" href="javascript:void(0);">h4</a></li>
+                                    <div class="nonDisplay" id="h4Info">
+                                        <p><strong>Nombre:</strong> Heading 4.</p>
+                                        <p><strong>Propósito:</strong> utilizado como etiqueta de subtítulo.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;h4&rsaquo;Ejemplo&lsaquo;/h4&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><i>align</i> (no soportado en HTML5) especifica el alineamiento del heading. Los posibles valores son:</li>
+                                            <ul>
+                                                <li>left</li>
+                                                <li>center</li>
+                                                <li>right</li>
+                                                <li>justify</li>
+                                            </ul>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <h4 style="text-align:center;">Ejemplo</h4>
+                                    </div>
+
+                                    <li><a onclick="toggleInfo('h5Info')" href="javascript:void(0);">h5</a></li>
+                                    <div class="nonDisplay" id="h5Info">
+                                        <p><strong>Nombre:</strong> Heading 5.</p>
+                                        <p><strong>Propósito:</strong> utilizado como etiqueta de subtítulo.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;h5&rsaquo;Ejemplo&lsaquo;/h5&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><i>align</i> (no soportado en HTML5) especifica el alineamiento del heading. Los posibles valores son:</li>
+                                            <ul>
+                                                <li>left</li>
+                                                <li>center</li>
+                                                <li>right</li>
+                                                <li>justify</li>
+                                            </ul>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <h5 style="text-align:center;">Ejemplo</h5>
+                                    </div>
+
+                                    <li><a onclick="toggleInfo('h6Info')" href="javascript:void(0);">h6</a></li>
+                                    <div class="nonDisplay" id="h6Info">
+                                        <p><strong>Nombre:</strong> Heading 6.</p>
+                                        <p><strong>Propósito:</strong> utilizado como etiqueta de subtítulo.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;h6&rsaquo;Ejemplo&lsaquo;/h6&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><i>align</i> (no soportado en HTML5) especifica el alineamiento del heading. Los posibles valores son:</li>
+                                            <ul>
+                                                <li>left</li>
+                                                <li>center</li>
+                                                <li>right</li>
+                                                <li>justify</li>
+                                            </ul>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <h6 style="text-align:center;">Ejemplo</h6>
+                                    </div>
+                                </ul>
+                            </div>
+
+                    </div>
+                    <div>
+                        <a onclick="toggleInfo('textParagraph')" href="javascript:void(0);">Párrafo</a>
+                            <div class="nonDisplay infoElement" id="textParagraph">
+                                <ul>
+                                    <li><a onclick="toggleInfo('pInfo')" href="javascript:void(0);">p</a></li>
+                                    <div class="nonDisplay" id="pInfo">
+                                        <p><strong>Nombre:</strong> Párrafo.</p>
+                                        <p><strong>Propósito:</strong> utilizado para la definición de un párrafo.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;p&rsaquo;Ejemplo&lsaquo;/p&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><i>align</i> (no soportado en HTML5) especifica el alineamiento del heading. Los posibles valores son:</li>
+                                            <ul>
+                                                <li>left</li>
+                                                <li>center</li>
+                                                <li>right</li>
+                                                <li>justify</li>
+                                            </ul>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <p style="text-align:center;">Ejemplo</p>
+                                    </div>
+
+                                </ul>
+                            </div>
+                    </div>
+
+                    <div>
+                        <a onclick="toggleInfo('textHorizontalRuler')" href="javascript:void(0);">Regla horizontal</a>
+                            <div class="nonDisplay infoElement" id="textHorizontalRuler">
+                                <ul>
+                                    <li><a onclick="toggleInfo('hrInfo')" href="javascript:void(0);">hr</a></li>
+                                    <div class="nonDisplay" id="hrInfo">
+                                        <p><strong>Nombre:</strong> Regla horizontal.</p>
+                                        <p><strong>Propósito:</strong> utilizado para definir un salto temático en una página, es decir separar contenido.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;hr&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><i>align</i> (no soportado en HTML5) especifica el alineamiento del heading. Los posibles valores son:</li>
+                                            <ul>
+                                                <li>left</li>
+                                                <li>center</li>
+                                                <li>right</li>
+                                            </ul>
+                                            <li><i>noshade</i> (no soportado en HTML5) especifica si el elemento se renderizará como un color sólido. El valor es: <i>noshade</i></li>
+                                            <li><i>size</i> (no soportado en HTML5) especifica la altura del elemento. El valor es: <i>pixels</i></li>
+                                             <li><i>width</i> (no soportado en HTML5) especifica la altura del elemento. El valor es: <i>pixels</i></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <hr>
+                                    </div>
+
+                                </ul>
+                            </div>
+                    </div>
+
+                    <div>
+                        <a onclick="toggleInfo('textHyperlink')" href="javascript:void(0);">Hyperlink</a>
+                            <div class="nonDisplay infoElement" id="textHyperlink">
+                                <ul>
+                                    <li><a onclick="toggleInfo('aInfo')" href="javascript:void(0);">a</a></li>
+                                    <div class="nonDisplay" id="aInfo">
+                                        <p><strong>Nombre:</strong> Hyperlink.</p>
+                                        <p><strong>Propósito:</strong> utilizado para enlazar una página web a otra.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;a&rsaquo;Ejemplo&lsaquo;/a&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><i>href</i> especifica el URL del link al que va</li>
+                                            <li><i>hreflang</i> especifica el idioma del documento enlazado. El valor es: <i>language_code</i></li>
+                                            <li><i>ping</i> especifica URLs a las cuales se harán post requests, usualmente utilizado para tracking. El valor es: <i>list_of_URLs</i></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <a style="text-align:center;" href="https://www.google.com" target="blank">google.com</a>
+                                    </div>
+
+                                </ul>
+                            </div>
+                    </div>
+
+                    <div>
+                        <a onclick="toggleInfo('textLists')" href="javascript:void(0);">Lists</a>
+                            <div class="nonDisplay infoElement" id="textLists">
+                                <ul>
+                                    <li><a onclick="toggleInfo('ulInfo')" href="javascript:void(0);">ul</a></li>
+                                    <div class="nonDisplay" id="ulInfo">
+                                        <p><strong>Nombre:</strong> Lista no ordenada.</p>
+                                        <p><strong>Propósito:</strong> utilizado para enlistar elementos sin un orden en específico.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;ul&rsaquo;Ejemplo&lsaquo;/ul&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><i>compact</i> especifica que la lista debe renderizar más pequeño de lo normal.</li>
+                                            <li><i>type</i> especifica el tipo de símbolo para usar en la lista. Los valores pueden ser: <i>disc, square, circle</i></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <li><ul>Ejemplo</ul></li>
+                                    </div>
+
+                                </ul>
+                                <ul>
+                                    <li><a onclick="toggleInfo('olInfo')" href="javascript:void(0);">ol</a></li>
+                                    <div class="nonDisplay" id="olInfo">
+                                        <p><strong>Nombre:</strong> Lista ordenada.</p>
+                                        <p><strong>Propósito:</strong> utilizado para enlistar elementos con un orden en específico.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;ol&rsaquo;Ejemplo&lsaquo;/ol&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><i>compact</i> especifica que la lista debe renderizar más pequeño de lo normal.</li>
+                                            <li><i>type</i> especifica el tipo de símbolo para usar en la lista. Los valores pueden ser: <i>disc, square, circle</i></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <li><ol>Ejemplo</ol></li>
+                                    </div>
+
+                                </ul>
+                            </div>
+                    </div>
+
+                    <div>
+                        <a onclick="toggleInfo('textImages')" href="javascript:void(0);">Imágenes</a>
+                            <div class="nonDisplay infoElement" id="textImages">
+                                <ul>
+                                    <li><a onclick="toggleInfo('imgInfo')" href="javascript:void(0);">img</a></li>
+                                    <div class="nonDisplay" id="imgInfo">
+                                        <p><strong>Nombre:</strong> Image.</p>
+                                        <p><strong>Propósito:</strong> utilizado para definir una imagen en una página.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;img src="ejemplo.jpg"&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><i>height</i> especifica la altura de la imagen. El valor es: <i>pixels</i></li>
+                                            <li><i>width</i> especifica la anchura de la imagen. El valor es: <i>pixels</i></li>
+                                            <li><i>src</i> especifica el URL de la imagen.</li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <img src="/documents/shar-pei.jpg" width="80%" height="80%">
+                                    </div>
+
+                                </ul>
+                            </div>
+                    </div>
+
+                    <div>
+                        <a onclick="toggleInfo('textDivider')" href="javascript:void(0);">Divisor</a>
+                            <div class="nonDisplay infoElement" id="textDivider">
+                                <ul>
+                                    <li><a onclick="toggleInfo('divInfo')" href="javascript:void(0);">div</a></li>
+                                    <div class="nonDisplay" id="divInfo">
+                                        <p><strong>Nombre:</strong> Divisor.</p>
+                                        <p><strong>Propósito:</strong> utilizado para definir una división en la página.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;div&rsaquo;&lsaquo;/div&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><i>align</i> (no soportado en HTML5) especifica el alineamiento del div. Los posibles valores son:</li>
+                                            <ul>
+                                                <li>left</li>
+                                                <li>center</li>
+                                                <li>right</li>
+                                                <li>justify</li>
+                                            </ul>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <div></div>
+                                    </div>
+
+                                </ul>
+                            </div>
+                    </div>
+
+                    <div>
+                        <a onclick="toggleInfo('textSpan')" href="javascript:void(0);">Span</a>
+                            <div class="nonDisplay infoElement" id="textSpan">
+                                <ul>
+                                    <li><a onclick="toggleInfo('spanInfo')" href="javascript:void(0);">span</a></li>
+                                    <div class="nonDisplay" id="spanInfo">
+                                        <p><strong>Nombre:</strong> Span.</p>
+                                        <p><strong>Propósito:</strong> utilizado para agrupar elementos en un documento. Permite agregar un punto de referencia en una página.</p>
+                                        <p><strong>Sintáxis:</strong> &lsaquo;span&rsaquo;&lsaquo;/span&rsaquo;</p>
+                                        <p><strong>Atributos:</strong></p>
+                                        <ul>
+                                            <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        </ul>
+                                        <p><strong>Ejemplo:</strong></p>
+                                        <span></span>
+                                    </div>
+
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <div class="column">
+            <h2>HTML5</h2>
+                <div id="horizontal">
+                <div>
+                    <a onclick="toggleInfo('textArticle')" href="javascript:void(0);">Artículo</a>
+                        <div class="nonDisplay infoElement" id="textArticle">
+                            <ul>
+                                <li><a onclick="toggleInfo('articleInfo')" href="javascript:void(0);">article</a></li>
+                                <div class="nonDisplay" id="articleInfo">
+                                    <p><strong>Nombre:</strong> Artículo.</p>
+                                    <p><strong>Propósito:</strong> utilizado para etiquetar contenido auto-contenido.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;article&rsaquo;Ejemplo&lsaquo;/article&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><strong>Ejemplo:</strong></p>
+                                    <article>
+                                        <h1>Google Chrome</h1>
+                                        <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+                                    </article>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+            
+                <div>
+                    <a onclick="toggleInfo('textAside')" href="javascript:void(0);">Aside</a>
+                        <div class="nonDisplay infoElement" id="textAside">
+                            <ul>
+                                <li><a onclick="toggleInfo('asideInfo')" href="javascript:void(0);">aside</a></li>
+                                <div class="nonDisplay" id="asideInfo">
+                                    <p><strong>Nombre:</strong> Aside.</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir contenido separado del contenido en el que se encuentra.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;aside&rsaquo;Ejemplo&lsaquo;/aside&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><strong>Ejemplo:</strong></p>
+                                    <aside>
+                                        <h4>Epcot Center</h4>
+                                        <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+                                    </aside>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                    
+                <div>
+                    <a onclick="toggleInfo('textDetails')" href="javascript:void(0);">Detalles</a>
+                        <div class="nonDisplay infoElement" id="textDetails">
+                            <ul>
+                                <li><a onclick="toggleInfo('detailsInfo')" href="javascript:void(0);">details</a></li>
+                                <div class="nonDisplay" id="detailsInfo">
+                                    <p><strong>Nombre:</strong> Details.</p>
+                                    <p><strong>Propósito:</strong> utilizado para especificar detalles adicionales que el usuario puede ver o esconder.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;details&rsaquo;Ejemplo&lsaquo;/details&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><i>open</i> especifica si el contenido dentro de la etiqueta debe estar visible u oculta</li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><strong>Ejemplo:</strong></p>
+                                    <details>
+                                    <summary>Copyright 1999-2018.</summary>
+                                    <p> - by Refsnes Data. All Rights Reserved.</p>
+                                    <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+                                    </details>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                    
+                <div>
+                    <a onclick="toggleInfo('textFigcaption')" href="javascript:void(0);">Caption de imágenes</a>
+                        <div class="nonDisplay infoElement" id="textFigcaption">
+                            <ul>
+                                <li><a onclick="toggleInfo('figcaptionInfo')" href="javascript:void(0);">figcaption</a></li>
+                                <div class="nonDisplay" id="figcaptionInfo">
+                                    <p><strong>Nombre:</strong> Figure caption.</p>
+                                    <p><strong>Propósito:</strong> utilizado para especificar detalles para una figura o imagen.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;figcaption&rsaquo;Ejemplo&lsaquo;/figcaption&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><strong>Ejemplo:</strong></p>
+                                    <figure>
+                                        <img src="/documents/shar-pei.jpg" width="80%" height="80%">
+                                        <figcaption>Shar-Pei dog.</figcaption>
+                                    </figure>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                
+                <div>
+                    <a onclick="toggleInfo('textFigures')" href="javascript:void(0);">Figuras</a>
+                        <div class="nonDisplay infoElement" id="textFigures">
+                            <ul>
+                                <li><a onclick="toggleInfo('figureInfo')" href="javascript:void(0);">figure</a></li>
+                                <div class="nonDisplay" id="figureInfo">
+                                    <p><strong>Nombre:</strong> Figure.</p>
+                                    <p><strong>Propósito:</strong> utilizado para especificar contenido interno, como imágenes, código, diagramas, etc.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;figure&rsaquo;Ejemplo&lsaquo;/figure&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><strong>Ejemplo:</strong></p>
+                                    <figure>
+                                        <img src="/documents/shar-pei.jpg" alt="Shar-Pei dog" width="80%" height="80%">
+                                    </figure>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                    
+                <div>
+                    <a onclick="toggleInfo('textFooter')" href="javascript:void(0);">Pie de página</a>
+                        <div class="nonDisplay infoElement" id="textFooter">
+                            <ul>
+                                <li><a onclick="toggleInfo('footerInfo')" href="javascript:void(0);">footer</a></li>
+                                <div class="nonDisplay" id="footerInfo">
+                                    <p><strong>Nombre:</strong> Pie de página.</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir el pie de página de un documento o sección.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;footer&rsaquo;Ejemplo&lsaquo;/footer&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><strong>Ejemplo:</strong></p>
+                                    <footer>
+                                        <p>Posted by: Hege Refsnes</p>
+                                        <p>Contact information: <a href="mailto:someone@example.com">
+                                        someone@example.com</a>.</p>
+                                    </footer>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                    
+                <div>
+                    <a onclick="toggleInfo('textEncabezado')" href="javascript:void(0);">Encabezado</a>
+                        <div class="nonDisplay infoElement" id="textEncabezado">
+                            <ul>
+                                <li><a onclick="toggleInfo('headerInfo')" href="javascript:void(0);">header</a></li>
+                                <div class="nonDisplay" id="headerInfo">
+                                    <p><strong>Nombre:</strong> Pie de página.</p>
+                                    <p><strong>Propósito:</strong> utilizado para representar un contenedor de información o un conjunto de links de navegación.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;header&rsaquo;Ejemplo&lsaquo;/header&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><strong>Ejemplo:</strong></p>
+                                    <header>
+                                        <h1>Most important heading here</h1>
+                                        <h3>Less important heading here</h3>
+                                        <p>Some additional information here</p>
+                                    </header>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                    
+                <div>
+                    <a onclick="toggleInfo('textMain')" href="javascript:void(0);">Main</a>
+                        <div class="nonDisplay infoElement" id="textMain">
+                            <ul>
+                                <li><a onclick="toggleInfo('mainInfo')" href="javascript:void(0);">main</a></li>
+                                <div class="nonDisplay" id="mainInfo">
+                                    <p><strong>Nombre:</strong> Main.</p>
+                                    <p><strong>Propósito:</strong> utilizado para especificar el contenido principal de un documento.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;main&rsaquo;Ejemplo&lsaquo;/main&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><strong>Ejemplo:</strong></p>
+                                    <main>
+                                        <h1>Web Browsers</h1>
+                                        <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
+
+                                    <article>
+                                        <h1>Google Chrome</h1>
+                                        <p>Google Chrome is a free, open-source web browser developed by Google,
+                                        released in 2008.</p>
+                                    </article>
+                                    </main>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                    
+                <div>
+                    <a onclick="toggleInfo('textMark')" href="javascript:void(0);">Mark</a>
+                        <div class="nonDisplay infoElement" id="textMark">
+                            <ul>
+                                <li><a onclick="toggleInfo('markInfo')" href="javascript:void(0);">mark</a></li>
+                                <div class="nonDisplay" id="markInfo">
+                                    <p><strong>Nombre:</strong> Mark.</p>
+                                    <p><strong>Propósito:</strong> utilizado para resaltar texto.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;mark&rsaquo;Ejemplo&lsaquo;/mark&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><strong>Ejemplo:</strong></p>
+                                    <p>Do not forget to buy <mark>milk</mark> today.</p>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                    
+                <div>
+                    <a onclick="toggleInfo('textNav')" href="javascript:void(0);">Links de navegación</a>
+                        <div class="nonDisplay infoElement" id="textNav">
+                            <ul>
+                                <li><a onclick="toggleInfo('navInfo')" href="javascript:void(0);">nav</a></li>
+                                <div class="nonDisplay" id="navInfo">
+                                    <p><strong>Nombre:</strong> Navigation.</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir un conjunto de links para navegación.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;nav&rsaquo;Ejemplo&lsaquo;/nav&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><strong>Ejemplo:</strong></p>
+                                    <nav>
+                                        <a href="/html/">HTML</a> |
+                                        <a href="/css/">CSS</a> |
+                                        <a href="/js/">JavaScript</a> |
+                                        <a href="/jquery/">jQuery</a>
+                                    </nav>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                
+                <div>
+                    <a onclick="toggleInfo('textSection')" href="javascript:void(0);">Sección</a>
+                        <div class="nonDisplay infoElement" id="textSection">
+                            <ul>
+                                <li><a onclick="toggleInfo('sectionInfo')" href="javascript:void(0);">section</a></li>
+                                <div class="nonDisplay" id="sectionInfo">
+                                    <p><strong>Nombre:</strong> Sección.</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir una sección en un documento, como capítulos, encabezados, pies de página, etc.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;section&rsaquo;Ejemplo&lsaquo;/section&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><strong>Ejemplo:</strong></p>
+                                    <section>
+                                        <h1>WWF</h1>
+                                        <p>The World Wide Fund for Nature (WWF) is....</p>
+                                    </section>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                    
+                <div>
+                    <a onclick="toggleInfo('textSummary')" href="javascript:void(0);">Resumen</a>
+                        <div class="nonDisplay infoElement" id="textSummary">
+                            <ul>
+                                <li><a onclick="toggleInfo('summaryInfo')" href="javascript:void(0);">summary</a></li>
+                                <div class="nonDisplay" id="summaryInfo">
+                                    <p><strong>Nombre:</strong> Resumen.</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir un encabezado visible para el elemento &lsaquo;details&rsaquo;.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;summary&rsaquo;Ejemplo&lsaquo;/summary&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><strong>Ejemplo:</strong></p>
+                                    <details>
+                                        <summary>Copyright 1999-2014.</summary>
+                                        <p> - by Refsnes Data. All Rights Reserved.</p>
+                                        <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+                                    </details>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                
+                <div>
+                    <a onclick="toggleInfo('textTime')" href="javascript:void(0);">Tiempo</a>
+                        <div class="nonDisplay infoElement" id="textTime">
+                            <ul>
+                                <li><a onclick="toggleInfo('timeInfo')" href="javascript:void(0);">time</a></li>
+                                <div class="nonDisplay" id="timeInfo">
+                                    <p><strong>Nombre:</strong> Tiempo.</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir la fecha en formato legible para un ser humano.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;time&rsaquo;Ejemplo&lsaquo;/time&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><i>datetime</i> especifica información legible para la máquina del elemento &lsaquo;time&rsaquo;</li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><strong>Ejemplo:</strong></p>
+                                    <p>We open at <time>10:00</time> every morning.</p>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                    
+                <div>
+                    <a onclick="toggleInfo('textCanvas')" href="javascript:void(0);">Canvas</a>
+                        <div class="nonDisplay infoElement" id="textCanvas">
+                            <ul>
+                                <li><a onclick="toggleInfo('canvasInfo')" href="javascript:void(0);">canvas</a></li>
+                                <div class="nonDisplay" id="canvasInfo">
+                                    <p><strong>Nombre:</strong> Canvas.</p>
+                                    <p><strong>Propósito:</strong> utilizado para dibujar gráficos en tiempo de ejecución.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;canvas&rsaquo;Ejemplo&lsaquo;/canvas&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <canvas id="myCanvas"></canvas>
+                                    <script>
+                                    var canvas = document.getElementById("myCanvas");
+                                    var ctx = canvas.getContext("2d");
+                                    ctx.fillStyle = "#FF0000";
+                                    ctx.fillRect(0, 0, 80, 80);
+                                    </script>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                    
+                <div>
+                    <a onclick="toggleInfo('textCite')" href="javascript:void(0);">Cita</a>
+                        <div class="nonDisplay infoElement" id="textCite">
+                            <ul>
+                                <li><a onclick="toggleInfo('citeInfo')" href="javascript:void(0);">cite</a></li>
+                                <div class="nonDisplay" id="citeInfo">
+                                    <p><strong>Nombre:</strong> Citas.</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir el título de un trabajo.</p>
+                                    <p><strong>Sintáxis:</strong> &lsaquo;cite&rsaquo;Ejemplo&lsaquo;/cite&rsaquo;</p>
+                                    <p><strong>Atributos:</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
+                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                    </ul>
+                                    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+                                </div>
+                            </ul>
+                        </div>
+                </div>
+                    
+            </div>
+        </div>
+        <div class="column">
+            <h2>CSS3</h2>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+function toggleInfo(id_) {
+    var x = document.getElementById(id_);
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>

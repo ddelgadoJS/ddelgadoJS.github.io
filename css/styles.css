@@ -1,25 +1,50 @@
 html *
 {
-   font-size: 1em !important;
-   color: #000 !important;
-   font-family: Helvetica !important;
+    color: #26272B !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; !important;
 }
 
-.header {
-    font-weight: bold;
-    background-color: red;
+#header {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#footer {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    
+    margin-top: 50px;
+    text-align: center;
+    line-height: 0.4;
+}
+
+.footerColumn {
+    float: left;
+    width: 50%;
 }
 
 .column {
-  float: left;
-  width: 33.33%;
+    float: left;
+    text-align: center;
+    width: 33.33%;
 }
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .horizontal{
@@ -33,7 +58,7 @@ html *
     margin-left: 10px;
 }
 
-#elementsList {
+.nonDisplay {
 	display: none;
+    text-align: left;
 }
-
