@@ -740,18 +740,22 @@
                                 <li><a onclick="toggleInfo('colorsInfo')" href="javascript:void(0);">color</a></li>
                                 <div class="nonDisplay" id="colorsInfo">
                                     <p><strong>Nombre:</strong> Colores.</p>
-                                    <p><strong>Propósito:</strong> utilizado para etiquetar contenido auto-contenido.</p>
-                                    <p><strong>Sintáxis:</strong> &lsaquo;article&rsaquo;Ejemplo&lsaquo;/article&rsaquo;</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir el color de texto o de elementos.</p>
+                                    <p><strong>Sintáxis:</strong></p>
+                                    <textarea disabled rows="14" columns="1000"> 
+<style>
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+</style>
+                                    </textarea>
                                     <p><strong>Atributos:</strong></p>
                                     <ul>
-                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
-                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        <li>color es uno de los atributos principales, este setea el color del texto que tendrá el elemento.</li>
                                     </ul>
                                     <p><strong>Ejemplo:</strong></p>
-                                    <article>
-                                        <h1>Google Chrome</h1>
-                                        <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
-                                    </article>
+<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color:#ff6347;">#ff6347</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
                                 </div>
                             </ul>
                         </div>
@@ -765,17 +769,30 @@
                                 <div class="nonDisplay" id="backgroundInfo">
                                     <p><strong>Nombre:</strong> Background.</p>
                                     <p><strong>Propósito:</strong> utilizado para definir contenido separado del contenido en el que se encuentra.</p>
-                                    <p><strong>Sintáxis:</strong> &lsaquo;aside&rsaquo;Ejemplo&lsaquo;/aside&rsaquo;</p>
+                                    <p><strong>Sintáxis:</strong></p>
+                                    <textarea disabled rows="14" columns="1000"> 
+<style>
+body {
+  background-color: lightblue;
+}
+</style>
+                                    </textarea>
                                     <p><strong>Atributos:</strong></p>
                                     <ul>
-                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
-                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        <li>background-color es uno de los atributos principales, este setea el color del background que tendrá el elemento.</li>
                                     </ul>
                                     <p><strong>Ejemplo:</strong></p>
-                                    <aside>
-                                        <h4>Epcot Center</h4>
-                                        <p>The Epcot Center is a theme park in Disney World, Florida.</p>
-                                    </aside>
+<style>
+#divEjemplo5 {
+  background-color: lightblue;
+}
+</style>
+
+<div id=divEjemplo5>
+This is a text inside a div element.
+<p>This paragraph has its own background color.</p>
+We are still in the div element.
+</div>
                                 </div>
                             </ul>
                         </div>
@@ -788,20 +805,29 @@
                                 <li><a onclick="toggleInfo('bordersInfo')" href="javascript:void(0);">borders</a></li>
                                 <div class="nonDisplay" id="bordersInfo">
                                     <p><strong>Nombre:</strong> Bordes.</p>
-                                    <p><strong>Propósito:</strong> utilizado para especificar detalles adicionales que el usuario puede ver o esconder.</p>
-                                    <p><strong>Sintáxis:</strong> &lsaquo;details&rsaquo;Ejemplo&lsaquo;/details&rsaquo;</p>
+                                    <p><strong>Propósito:</strong> utilizado para especificar el estilo, anchura y color del borde de un elemento.</p>
+                                    <p><strong>Sintáxis:</strong></p>
+                                    <textarea disabled rows="14" columns="1000"> 
+<style>
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+</style>
+                                    </textarea>
                                     <p><strong>Atributos:</strong></p>
                                     <ul>
-                                        <li><i>open</i> especifica si el contenido dentro de la etiqueta debe estar visible u oculta</li>
-                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
-                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        <li>border-style es uno de los atributos principales, este setea el estilo del borde del elemento.</li>
                                     </ul>
                                     <p><strong>Ejemplo:</strong></p>
-                                    <details>
-                                    <summary>Copyright 1999-2018.</summary>
-                                    <p> - by Refsnes Data. All Rights Reserved.</p>
-                                    <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-                                    </details>
+<style>
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+</style>
+
+<p class="one">Some text.</p>
                                 </div>
                             </ul>
                         </div>
@@ -814,18 +840,37 @@
                                 <li><a onclick="toggleInfo('marginInfo')" href="javascript:void(0);">margin</a></li>
                                 <div class="nonDisplay" id="marginInfo">
                                     <p><strong>Nombre:</strong> Márgenes.</p>
-                                    <p><strong>Propósito:</strong> utilizado para especificar detalles para una figura o imagen.</p>
-                                    <p><strong>Sintáxis:</strong> &lsaquo;figcaption&rsaquo;Ejemplo&lsaquo;/figcaption&rsaquo;</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir un espacio alrededor de un elemento, fuera de bordes definidos.</p>
+                                    <p><strong>Sintáxis:</strong>
+                                    <textarea disabled rows="14" columns="1000"> 
+<style>
+div {
+  margin-top: 50px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  margin-left: 80px;
+}
+</style>
+                                    </textarea>
                                     <p><strong>Atributos:</strong></p>
                                     <ul>
-                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
-                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        <li>padding es el atributo principal, este setea el padding para los cuatro lados del elemento.</li>
                                     </ul>
                                     <p><strong>Ejemplo:</strong></p>
-                                    <figure>
-                                        <img src="/documents/shar-pei.jpg" width="80%" height="80%">
-                                        <figcaption>Shar-Pei dog.</figcaption>
-                                    </figure>
+<style>
+#ejemploDiv3 {
+  border: 1px solid black;
+  background-color: lightblue;
+  margin-top: 50px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  margin-left: 80px;
+}
+</style>
+
+<h2>Using individual margin properties</h2>
+
+<div id=ejemploDiv3>This div element has a top margin of 50px, a right margin of 30px, a bottom margin of 50px, and a left margin of 80px.</div>
                                 </div>
                             </ul>
                         </div>
@@ -838,17 +883,37 @@
                                 <li><a onclick="toggleInfo('paddingInfo')" href="javascript:void(0);">padding</a></li>
                                 <div class="nonDisplay" id="paddingInfo">
                                     <p><strong>Nombre:</strong> Padding.</p>
-                                    <p><strong>Propósito:</strong> utilizado para especificar contenido interno, como imágenes, código, diagramas, etc.</p>
-                                    <p><strong>Sintáxis:</strong> &lsaquo;figure&rsaquo;Ejemplo&lsaquo;/figure&rsaquo;</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir un espacio alrededor de un elemento, dentro de bordes definidos.</p>
+                                    <p><strong>Sintáxis:</strong>
+                                    <textarea disabled rows="14" columns="1000"> 
+<style>
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+</style>
+                                    </textarea>
                                     <p><strong>Atributos:</strong></p>
                                     <ul>
-                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
-                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        <li>padding es el atirubto principal, este setea el padding para los cuatro lados del elemento.</li>
                                     </ul>
                                     <p><strong>Ejemplo:</strong></p>
-                                    <figure>
-                                        <img src="/documents/shar-pei.jpg" alt="Shar-Pei dog" width="80%" height="80%">
-                                    </figure>
+<style>
+#ejemploDiv2 {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+</style>
+
+<h2>Using individual padding properties</h2>
+
+<div id=ejemploDiv2>This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
                                 </div>
                             </ul>
                         </div>
@@ -861,19 +926,33 @@
                                 <li><a onclick="toggleInfo('heightInfo')" href="javascript:void(0);">height</a></li>
                                 <div class="nonDisplay" id="heightInfo">
                                     <p><strong>Nombre:</strong> Altura.</p>
-                                    <p><strong>Propósito:</strong> utilizado para definir el pie de página de un documento o sección.</p>
-                                    <p><strong>Sintáxis:</strong> &lsaquo;footer&rsaquo;Ejemplo&lsaquo;/footer&rsaquo;</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir la altura de un elemento.</p>
+                                    <p><strong>Sintáxis:</strong>
+                                    <textarea disabled rows="14" columns="1000"> 
+<style>
+div {
+  height: 50%;
+}
+</style>
+                                    </textarea>
                                     <p><strong>Atributos:</strong></p>
                                     <ul>
-                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
-                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        <li>Para setear la altura del elemento se puede hacer en píxeles o con un porcentaje relativo a la página.</li>
                                     </ul>
                                     <p><strong>Ejemplo:</strong></p>
-                                    <footer>
-                                        <p>Posted by: Hege Refsnes</p>
-                                        <p>Contact information: <a href="mailto:someone@example.com">
-                                        someone@example.com</a>.</p>
-                                    </footer>
+<style>
+#EjemploDiv {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
+</style>
+
+<h2>Set the height and width of an element</h2>
+
+<p>This div element has a height of 200px and a width of 50%:</p>
+
+<div id=EjemploDiv></div>
                                 </div>
                             </ul>
                         </div>
@@ -886,19 +965,33 @@
                                 <li><a onclick="toggleInfo('widthInfo')" href="javascript:void(0);">width</a></li>
                                 <div class="nonDisplay" id="widthInfo">
                                     <p><strong>Nombre:</strong> Anchura.</p>
-                                    <p><strong>Propósito:</strong> utilizado para representar un contenedor de información o un conjunto de links de navegación.</p>
-                                    <p><strong>Sintáxis:</strong> &lsaquo;header&rsaquo;Ejemplo&lsaquo;/header&rsaquo;</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir la anchura de un elemento.</p>
+                                    <p><strong>Sintáxis:</strong>
+                                    <textarea disabled rows="14" columns="1000"> 
+<style>
+div {
+  width: 50%;
+}
+</style>
+                                    </textarea>
                                     <p><strong>Atributos:</strong></p>
                                     <ul>
-                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
-                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        <li>Para setear la anchura del elemento se puede hacer en píxeles o con un porcentaje relativo a la página.</li>
                                     </ul>
                                     <p><strong>Ejemplo:</strong></p>
-                                    <header>
-                                        <h1>Most important heading here</h1>
-                                        <h3>Less important heading here</h3>
-                                        <p>Some additional information here</p>
-                                    </header>
+<style>
+#EjemploDiv {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
+</style>
+
+<h2>Set the height and width of an element</h2>
+
+<p>This div element has a height of 200px and a width of 50%:</p>
+
+<div id=EjemploDiv></div>
                                 </div>
                             </ul>
                         </div>
@@ -911,45 +1004,68 @@
                                 <li><a onclick="toggleInfo('fontInfo')" href="javascript:void(0);">font</a></li>
                                 <div class="nonDisplay" id="fontInfo">
                                     <p><strong>Nombre:</strong> Fuente.</p>
-                                    <p><strong>Propósito:</strong> utilizado para especificar el contenido principal de un documento.</p>
-                                    <p><strong>Sintáxis:</strong> &lsaquo;main&rsaquo;Ejemplo&lsaquo;/main&rsaquo;</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir la fuente para la página, el estilo, tamaño, etc.</p>
+                                    <p><strong>Sintáxis:</strong></p>
+                                    <textarea disabled rows="14" columns="1000"> 
+<style>
+p {
+  font-family: Helvetica, sans-serif;
+}
+</style>
+                                    </textarea>
                                     <p><strong>Atributos:</strong></p>
                                     <ul>
-                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
-                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        <li>font-family es el atributo principal, acá se agregan las fuentes en el orden deseado, se intentará mostrar la página con la primera opción.</li>
                                     </ul>
                                     <p><strong>Ejemplo:</strong></p>
-                                    <main>
-                                        <h1>Web Browsers</h1>
-                                        <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
-
-                                    <article>
-                                        <h1>Google Chrome</h1>
-                                        <p>Google Chrome is a free, open-source web browser developed by Google,
-                                        released in 2008.</p>
-                                    </article>
-                                    </main>
+<style>
+p {
+  font-family: Helvetica, sans-serif; 
+}
+</style>
+                                    
+<p>Test text.</p>
                                 </div>
                             </ul>
                         </div>
                 </div>
                     
                 <div>
-                    <a onclick="toggleInfo('textPosition')" href="javascript:void(0);">Position</a>
+                    <a onclick="toggleInfo('textPosition')" href="javascript:void(0);">Posición</a>
                         <div class="nonDisplay infoElement" id="textPosition">
                             <ul>
                                 <li><a onclick="toggleInfo('positionInfo')" href="javascript:void(0);">position</a></li>
                                 <div class="nonDisplay" id="positionInfo">
                                     <p><strong>Nombre:</strong> Posición.</p>
-                                    <p><strong>Propósito:</strong> utilizado para resaltar texto.</p>
-                                    <p><strong>Sintáxis:</strong> &lsaquo;mark&rsaquo;Ejemplo&lsaquo;/mark&rsaquo;</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir el tipo para el método de posicionamiento de un elemento.</p>
+                                    <p><strong>Sintáxis:</strong></p>
+                                    <textarea disabled rows="14" columns="1000"> 
+<style>
+div.static {
+  position: static;
+}
+</style>
+                                    </textarea>
                                     <p><strong>Atributos:</strong></p>
                                     <ul>
-                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
-                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        <li>position es el atributo principal, los posibles valores son: static, relative, fixed, absolute o sticky.</li>
                                     </ul>
                                     <p><strong>Ejemplo:</strong></p>
-                                    <p>Do not forget to buy <mark>milk</mark> today.</p>
+<style>
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+</style>
+
+<h2>position: static;</h2>
+
+<p>An element with position: static; is not positioned in any special way; it is 
+always positioned according to the normal flow of the page:</p>
+
+<div class="static">
+  This div element has position: static;
+</div>
                                 </div>
                             </ul>
                         </div>
@@ -962,20 +1078,31 @@
                                 <li><a onclick="toggleInfo('opacityInfo')" href="javascript:void(0);">opacity</a></li>
                                 <div class="nonDisplay" id="opacityInfo">
                                     <p><strong>Nombre:</strong> Opacity.</p>
-                                    <p><strong>Propósito:</strong> utilizado para definir un conjunto de links para navegación.</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir la transparencia de un elemento.</p>
                                     <p><strong>Sintáxis:</strong> &lsaquo;nav&rsaquo;Ejemplo&lsaquo;/nav&rsaquo;</p>
+                                    <textarea disabled rows="14" columns="1000"> 
+<style>
+img {
+  opacity: 0.5;
+}
+</style>
+                                    </textarea>
                                     <p><strong>Atributos:</strong></p>
                                     <ul>
-                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
-                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        <li>opacity es el atributo principal, se utiliza para indicar el grado de opacidad.</li>
                                     </ul>
                                     <p><strong>Ejemplo:</strong></p>
-                                    <nav>
-                                        <a href="/html/">HTML</a> |
-                                        <a href="/css/">CSS</a> |
-                                        <a href="/js/">JavaScript</a> |
-                                        <a href="/jquery/">jQuery</a>
-                                    </nav>
+<style>
+img {
+  opacity: 0.5;
+}
+</style>
+
+<h1>Image Transparency</h1>
+<p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+
+<p>Image with 50% opacity:</p>
+<img src="/documents/shar-pei.jpg" alt="Forest" width="170" height="100">
                                 </div>
                             </ul>
                         </div>
@@ -988,18 +1115,40 @@
                                 <li><a onclick="toggleInfo('formsInfo')" href="javascript:void(0);">form</a></li>
                                 <div class="nonDisplay" id="formsInfo">
                                     <p><strong>Nombre:</strong> Forms.</p>
-                                    <p><strong>Propósito:</strong> utilizado para definir una sección en un documento, como capítulos, encabezados, pies de página, etc.</p>
-                                    <p><strong>Sintáxis:</strong> &lsaquo;section&rsaquo;Ejemplo&lsaquo;/section&rsaquo;</p>
+                                    <p><strong>Propósito:</strong> utilizado para definir una sección en la página donde el usuario podrá ingresar texto.</p>
+                                    <p><strong>Sintáxis:</strong> 
+                                    <textarea disabled rows="14" columns="1000"> 
+<style>
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
+                                    </textarea>
                                     <p><strong>Atributos:</strong></p>
                                     <ul>
-                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
-                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        <li>width es el atributo principal, se utiliza para indicar el tamaño deseado del input field.</li>
                                     </ul>
                                     <p><strong>Ejemplo:</strong></p>
-                                    <section>
-                                        <h1>WWF</h1>
-                                        <p>The World Wide Fund for Nature (WWF) is....</p>
-                                    </section>
+<style>
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
+
+<p>Padded text fields:</p>
+
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname">
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname">
+</form>
                                 </div>
                             </ul>
                         </div>
@@ -1012,19 +1161,27 @@
                                 <li><a onclick="toggleInfo('shadowInfo')" href="javascript:void(0);">shadow</a></li>
                                 <div class="nonDisplay" id="shadowInfo">
                                     <p><strong>Nombre:</strong> Sombra.</p>
-                                    <p><strong>Propósito:</strong> utilizado para definir un encabezado visible para el elemento &lsaquo;details&rsaquo;.</p>
-                                    <p><strong>Sintáxis:</strong> &lsaquo;summary&rsaquo;Ejemplo&lsaquo;/summary&rsaquo;</p>
+                                    <p><strong>Propósito:</strong> utilizado para agregar sombras al texto.</p>
+                                    <p><strong>Sintáxis:</strong> 
+                                    <textarea disabled rows="14" columns="1000"> 
+<style>
+h1 {
+  text-shadow: 2px 2px;
+}
+</style>
+                                    </textarea>
                                     <p><strong>Atributos:</strong></p>
                                     <ul>
-                                        <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Atributos globales</a></li>
-                                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Atributos de evento</a></li>
+                                        <li>text-shadow es el atributo principal, y se debe indicar el tamaño deseado de la sombra.</li>
                                     </ul>
                                     <p><strong>Ejemplo:</strong></p>
-                                    <details>
-                                        <summary>Copyright 1999-2014.</summary>
-                                        <p> - by Refsnes Data. All Rights Reserved.</p>
-                                        <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-                                    </details>
+<style>
+#exampleH1 {
+  text-shadow: 2px 2px red;
+}
+</style>
+
+<h1 id=exampleH1>Text-shadow effect!</h1>
                                 </div>
                             </ul>
                         </div>
