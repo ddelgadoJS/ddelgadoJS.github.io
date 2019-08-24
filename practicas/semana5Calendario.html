@@ -1,0 +1,141 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Desarrollo Web</title>
+    <meta name="Práctica - Semana 3" content="TEC">
+    <meta name="Daniel Delgado">
+
+    <link rel="stylesheet" href="../css/semana5Calendario.css?v=1.0">
+    <script type="text/javascript" src="../js/semana5Calendario.js"></script>
+</head>
+
+<body>
+
+    <div id=header>
+        <h1>Práctica - Semana 5</h1>
+    </div>
+
+    <div>
+        <a class="linkToHTML"
+            href="https://github.com/ddelgadoJS/ddelgadoJS.github.io/tree/master/practicas/semana5Calendario.html"
+            target="_blank">HTML</a>
+        <a class="linkToCSS"
+            href="https://github.com/ddelgadoJS/ddelgadoJS.github.io/tree/master/css/semana5Calendario.css"
+            target="_blank">CSS</a>
+        <a class="linkToJS"
+            href="https://github.com/ddelgadoJS/ddelgadoJS.github.io/tree/master/js/semana5Calendario.js"
+            target="_blank">JS</a>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div id="anterior" class="monthPreviousAndNext" onclick="mesantes()"></div>
+        </div>
+        <div class="column">
+            <div id="titulos"></div>
+        </div>
+        <div class="column">
+            <div id="posterior" class="monthPreviousAndNext" onclick="mesdespues()"></div>
+        </div>
+    </div>
+
+    <table id="diasc" class="center">
+        <tr id="fila0">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr id="fila1" class="calendarCelds">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="fila2" class="calendarCelds">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="fila3" class="calendarCelds">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="fila4" class="calendarCelds">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="fila5" class="calendarCelds">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="fila6" class="calendarCells">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div id="fechaactual" class="center" onclick="actualizar()">Hoy es: </div>
+
+    <div id="buscafecha" class="center">
+        <form action="#" name="buscar">
+            <p>
+                <input id="buscarButton" type="button" value="Buscar" onclick="mifecha()"/>
+                el mes de
+                <select name="buscames">
+                    <option value="0">Enero</option>
+                    <option value="1">Febrero</option>
+                    <option value="2">Marzo</option>
+                    <option value="3">Abril</option>
+                    <option value="4">Mayo</option>
+                    <option value="5">Junio</option>
+                    <option value="6">Julio</option>
+                    <option value="7">Agosto</option>
+                    <option value="8">Septiembre</option>
+                    <option value="9">Octubre</option>
+                    <option value="10">Noviembre</option>
+                    <option value="11">Diciembre</option>
+                </select>
+                del año
+                <input type="text" name="buscaanno" maxlength="4" size="4"/>
+            </p>
+        </form>
+    </div>
+
+</body>
+
+</html>

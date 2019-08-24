@@ -1,0 +1,152 @@
+html * {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+     !important;
+}
+
+#header {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.linkToHTML {
+    position: fixed;
+    top: -4px;
+    right: 131px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: #46b8da;
+    text-decoration: none;
+    background-color: #31B0D5;
+}
+
+.linkToHTML:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.linkToHTML:hover {
+    color: #FCFF4B;
+    text-decoration: none;
+}
+
+.linkToCSS {
+    position: fixed;
+    top: -4px;
+    right: 58px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: #46b8da;
+    text-decoration: none;
+    background-color: #FFAD05;
+}
+
+.linkToCSS:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.linkToCSS:hover {
+    color: #FCFF4B;
+    text-decoration: none;
+}
+
+.linkToJS {
+    position: fixed;
+    top: -4px;
+    right: 0px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: #46b8da;
+    text-decoration: none;
+    background-color: #DB2B39;
+}
+
+.linkToJS:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.linkToJS:hover {
+    color: #FCFF4B;
+    text-decoration: none;
+}
+
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.1;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.column {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+}
+
+.row {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.monthPreviousAndNext {
+    color: white;
+    background-color: rgb(24, 185, 185);
+    padding: 6px 9px;
+    border-radius: 25px;
+}
+
+.monthPreviousAndNext:hover {
+    cursor: pointer;
+    background-color: rgb(51, 171, 201);
+}
+
+#titulos {
+    color: black;
+    padding: 6px 9px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.center {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#fechaactual {
+    padding: 20px 10px 5px 0px;
+    font-weight: bold;
+}
+
+#buscarButton {
+    color: white;
+    background-color: rgb(97, 105, 107);
+    padding: 6px 9px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    font-size: 15px;
+}
+
+#buscarButton:hover {
+    cursor: pointer;
+    background-color: rgb(51, 171, 201);
+}
