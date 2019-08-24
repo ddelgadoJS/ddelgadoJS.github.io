@@ -21,7 +21,7 @@
 
     <div>
         <a class="linkToHTML"
-            href="https://github.com/ddelgadoJS/ddelgadoJS.github.io/tree/master/semana5Calendario.html"
+            href="https://github.com/ddelgadoJS/ddelgadoJS.github.io/tree/master/practicas/semana5Calendario.html"
             target="_blank">HTML</a>
         <a class="linkToCSS"
             href="https://github.com/ddelgadoJS/ddelgadoJS.github.io/tree/master/css/semana5Calendario.css"
@@ -31,13 +31,19 @@
             target="_blank">JS</a>
     </div>
 
-    <div id="calendario">
-        <div id="anterior" onclick="mesantes()"></div>
-        <h2 id="titulos"></h2>
-        <div id="posterior" onclick="mesdespues()"></div>
+    <div class="row">
+        <div class="column">
+            <div id="anterior" class="monthPreviousAndNext" onclick="mesantes()"></div>
+        </div>
+        <div class="column">
+            <div id="titulos"></div>
+        </div>
+        <div class="column">
+            <div id="posterior" class="monthPreviousAndNext" onclick="mesdespues()"></div>
+        </div>
     </div>
 
-    <table id="diasc">
+    <table id="diasc" class="center">
         <tr id="fila0">
             <th></th>
             <th></th>
@@ -47,7 +53,7 @@
             <th></th>
             <th></th>
         </tr>
-        <tr id="fila1">
+        <tr id="fila1" class="calendarCelds">
             <td></td>
             <td></td>
             <td></td>
@@ -56,7 +62,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr id="fila2">
+        <tr id="fila2" class="calendarCelds">
             <td></td>
             <td></td>
             <td></td>
@@ -65,7 +71,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr id="fila3">
+        <tr id="fila3" class="calendarCelds">
             <td></td>
             <td></td>
             <td></td>
@@ -74,7 +80,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr id="fila4">
+        <tr id="fila4" class="calendarCelds">
             <td></td>
             <td></td>
             <td></td>
@@ -83,7 +89,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr id="fila5">
+        <tr id="fila5" class="calendarCelds">
             <td></td>
             <td></td>
             <td></td>
@@ -92,7 +98,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr id="fila6">
+        <tr id="fila6" class="calendarCells">
             <td></td>
             <td></td>
             <td></td>
@@ -103,11 +109,13 @@
         </tr>
     </table>
 
-    <div id="fechaactual"><i onclick="actualizar()">HOY: </i></div>
+    <div id="fechaactual" class="center" onclick="actualizar()">Hoy es: </div>
 
-    <div id="buscafecha">
+    <div id="buscafecha" class="center">
         <form action="#" name="buscar">
-            <p>Buscar ... MES
+            <p>
+                <input id="buscarButton" type="button" value="Buscar" onclick="mifecha()"/>
+                el mes de
                 <select name="buscames">
                     <option value="0">Enero</option>
                     <option value="1">Febrero</option>
@@ -122,10 +130,8 @@
                     <option value="10">Noviembre</option>
                     <option value="11">Diciembre</option>
                 </select>
-                ... AÑO ...
+                del año
                 <input type="text" name="buscaanno" maxlength="4" size="4"/>
-                ...
-                <input type="button" value="BUSCAR" onclick="mifecha()"/>
             </p>
         </form>
     </div>
