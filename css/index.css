@@ -1,5 +1,7 @@
 html * {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    color: rgba(35, 35, 35, 0.8);
 }
 
 #header {
@@ -63,47 +65,61 @@ html * {
 .linkToHTML {
     position: fixed;
     top: -4px;
-    right: 131px;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
-    border-color: #46b8da;
-    text-decoration: none;
+    right: 116px;
     background-color: #31B0D5;
+    box-shadow: 0 5px 0 rgb(63, 61, 57);
+    color: white;
+    padding: 0.75em 1em;
+    text-decoration: none;
+}
+
+.linkToHTML:hover {
+    background-color: rgb(40, 137, 167);
+}
+
+.linkToHTML:active {
+    box-shadow: none;
+    top: 5px;
 }
 
 .linkToCSS {
     position: fixed;
     top: -4px;
-    right: 58px;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
-    border-color: #46b8da;
-    text-decoration: none;
+    right: 51px;
     background-color: #FFAD05;
+    box-shadow: 0 5px 0 rgb(63, 61, 57);
+    color: white;
+    padding: 0.75em 1em;
+    text-decoration: none;
+}
+
+.linkToCSS:hover {
+    background-color: rgb(214, 143, 0);
+}
+
+.linkToCSS:active {
+    box-shadow: none;
+    top: 5px;
 }
 
 .linkToJS {
     position: fixed;
     top: -4px;
     right: 0px;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
-    border-color: #46b8da;
-    text-decoration: none;
     background-color: #DB2B39;
-}
-
-.linkToVisited:visited {
+    box-shadow: 0 5px 0 rgb(63, 61, 57);
     color: white;
-    text-decoration: none;
+    padding: 0.75em 1em;
+    text-decoration: none;   
 }
 
-.linkToHover:hover {
-    color: #FCFF4B;
-    text-decoration: none;
+.linkToJS:hover {
+    background-color: rgb(170, 26, 38);
+}
+
+.linkToJS:active {
+    box-shadow: none;
+    top: 5px;
 }
 
 .isDisabled {
@@ -113,3 +129,22 @@ html * {
     text-decoration: none;
     pointer-events: none;
 }
+
+.linkToPage {
+    color: rgba(35, 35, 35, 0.8);
+    font-size: 1.3em;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    line-height: 1.8;
+    padding: 3px;
+
+    text-decoration:none;
+    border-bottom: 2px solid #ef8b80;
+    box-shadow: inset 0 -2px 0 #ef8b80;
+    color: inherit;
+    transition: background 0.2s cubic-bezier(.33,.66,.66,1);
+  }
+  
+  .linkToPage:hover {
+    background: #ef8b80;
+  }

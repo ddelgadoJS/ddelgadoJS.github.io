@@ -112,6 +112,7 @@ html * {
     background-color: rgb(24, 185, 185);
     padding: 6px 9px;
     border-radius: 25px;
+    transition: all 0.2s;
 }
 
 .monthPreviousAndNext:hover {
@@ -133,8 +134,21 @@ html * {
 }
 
 #fechaactual {
-    padding: 20px 10px 5px 0px;
+    margin-top: 15px;
     font-weight: bold;
+
+    transition: all 0.2s;
+    color: white;
+    background-color: rgb(97, 105, 107);
+    padding: 6px 9px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 320px;
+}
+
+#fechaactual:hover {
+    cursor: pointer;
+    background-color: rgb(51, 171, 201);
 }
 
 #buscarButton {
@@ -142,7 +156,7 @@ html * {
     background-color: rgb(97, 105, 107);
     padding: 6px 9px;
     border-radius: 5px;
-    transition: all 0.5s;
+    transition: all 0.2s;
     font-size: 15px;
 }
 
