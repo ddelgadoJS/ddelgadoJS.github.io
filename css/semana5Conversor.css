@@ -98,15 +98,32 @@ html * {
     background-color: transparent;
 }
 
+.center {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.star {
+    opacity: 0.3;
+}
+
 tr, th, td {
     background-color: transparent;
     padding: 5px;
 }
 
 input {
-    width: 80px;
+    width: 85px;
     height: 30px;
-    font-size: 18px;
+    font-size: 14px;
     border-color: #FFD275;
     background-color: #605B56;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }

@@ -10,6 +10,7 @@
     <meta name="Daniel Delgado">
 
     <link rel="stylesheet" href="../css/semana5Conversor.css?v=1.0">
+    <script type="text/javascript" src="../js/semana5Conversor.js"></script>
 </head>
 
 <body>
@@ -31,16 +32,16 @@
     <table id="conversionTable">
         <tr>
 
-            <th><img src="../documents/images/argentina.png" width=60px height=60px></th>
-            <th><img src="../documents/images/brazil.png" width=60px height=60px></th>
-            <th><img src="../documents/images/canada.png" width=60px height=60px></th>
-            <th><img src="../documents/images/china.png" width=60px height=60px></th>
-            <th><img src="../documents/images/colombia.png" width=60px height=60px></th>
-            <th><img src="../documents/images/costa-rica.png" width=60px height=60px></th>
-            <th><img src="../documents/images/japan.png" width=60px height=60px></th>
-            <th><img src="../documents/images/south-korea.png" width=60px height=60px></th>
-            <th><img src="../documents/images/united-kingdom.png" width=60px height=60px></th>
-            <th><img src="../documents/images/united-states.png" width=60px height=60px></th>
+            <th><img src="../documents/images/argentina.png" width=60px height=60px /></th>
+            <th><img src="../documents/images/brazil.png" width=60px height=60px /></th>
+            <th><img src="../documents/images/canada.png" width=60px height=60px /></th>
+            <th><img src="../documents/images/china.png" width=60px height=60px /></th>
+            <th><img src="../documents/images/colombia.png" width=60px height=60px /></th>
+            <th><img src="../documents/images/costa-rica.png" width=60px height=60px /></th>
+            <th><img src="../documents/images/japan.png" width=60px height=60px /></th>
+            <th><img src="../documents/images/south-korea.png" width=60px height=60px /></th>
+            <th><img src="../documents/images/united-kingdom.png" width=60px height=60px /></th>
+            <th><img src="../documents/images/united-states.png" width=60px height=60px /></th>
         </tr>
         <tr>
             <td>Argentina</td>
@@ -67,31 +68,45 @@
             <td>USD</td>
         </tr>
         <tr>
-            <th><img src="../documents/images/star.png" width=30px height=30px></th>
-            <th><img src="../documents/images/star.png" width=30px height=30px></th>
-            <th><img src="../documents/images/star.png" width=30px height=30px></th>
-            <th><img src="../documents/images/star.png" width=30px height=30px></th>
-            <th><img src="../documents/images/star.png" width=30px height=30px></th>
-            <th><img src="../documents/images/star.png" width=30px height=30px></th>
-            <th><img src="../documents/images/star.png" width=30px height=30px></th>
-            <th><img src="../documents/images/star.png" width=30px height=30px></th>
-            <th><img src="../documents/images/star.png" width=30px height=30px></th>
-            <th><img src="../documents/images/star.png" width=30px height=30px></th>
+            <th><a href="#" onclick="changeStarState('ArgentinaStar')"> <img class="star" id="ArgentinaStar"
+                        src="../documents/images/star.png" width=30px height=30px /></a></th>
+            <th><a href="#" onclick="changeStarState('BrasilStar')"> <img class="star" id="BrasilStar"
+                        src="../documents/images/star.png" width=30px height=30px /></a></th>
+            <th><a href="#" onclick="changeStarState('CanadaStar')"> <img class="star" id="CanadaStar"
+                        src="../documents/images/star.png" width=30px height=30px /></a></th>
+            <th><a href="#" onclick="changeStarState('ChinaStar')"> <img class="star" id="ChinaStar"
+                        src="../documents/images/star.png" width=30px height=30px /></a></th>
+            <th><a href="#" onclick="changeStarState('ColombiaStar')"> <img class="star" id="ColombiaStar"
+                        src="../documents/images/star.png" width=30px height=30px /></a></th>
+            <th><a href="#" onclick="changeStarState('CostaRicaStar')"> <img class="star" id="CostaRicaStar"
+                        src="../documents/images/star.png" width=30px height=30px /></a></th>
+            <th><a href="#" onclick="changeStarState('JaponStar')"> <img class="star" id="JaponStar"
+                        src="../documents/images/star.png" width=30px height=30px /></a></th>
+            <th><a href="#" onclick="changeStarState('CoreaDelSurStar')"> <img class="star" id="CoreaDelSurStar"
+                        src="../documents/images/star.png" width=30px height=30px /></a></th>
+            <th><a href="#" onclick="changeStarState('ReinoUnidoStar')"> <img class="star" id="ReinoUnidoStar"
+                        src="../documents/images/star.png" width=30px height=30px /></a></th>
+            <th><a href="#" onclick="changeStarState('EstadosUnidosStar')"> <img class="star" id="EstadosUnidosStar"
+                        src="../documents/images/star.png" width=30px height=30px /></a></th>
         </tr>
         <tr>
-            <th><input type="text" name="ARS" value=""><br></th>
-            <th><input type="text" name="BRL" value=""><br></th>
-            <th><input type="text" name="CAD" value=""><br></th>
-            <th><input type="text" name="RMB" value=""><br></th>
-            <th><input type="text" name="COP" value=""><br></th>
-            <th><input type="text" name="CRC" value=""><br></th>
-            <th><input type="text" name="JPY" value=""><br></th>
-            <th><input type="text" name="KRW" value=""><br></th>
-            <th><input type="text" name="GBP" value=""><br></th>
-            <th><input type="text" name="USD" value=""><br></th>
+            <th><input class="inputField" type="number" name="ARS" onchange="validateOtherCells('ARS')"><br></th>
+            <th><input class="inputField" type="number" name="BRL" onchange="validateOtherCells('BRL')"><br></th>
+            <th><input class="inputField" type="number" name="CAD" onchange="validateOtherCells('CAD')"><br></th>
+            <th><input class="inputField" type="number" name="RMB" onchange="validateOtherCells('RMB')"><br></th>
+            <th><input class="inputField" type="number" name="COP" onchange="validateOtherCells('COP')"><br></th>
+            <th><input class="inputField" type="number" name="CRC" onchange="validateOtherCells('CRC')"><br></th>
+            <th><input class="inputField" type="number" name="JPY" onchange="validateOtherCells('JPY')"><br></th>
+            <th><input class="inputField" type="number" name="KRW" onchange="validateOtherCells('KRW')"><br></th>
+            <th><input class="inputField" type="number" name="GBP" onchange="validateOtherCells('GBP')"><br></th>
+            <th><input class="inputField" type="number" name="USD" onchange="validateOtherCells('USD')"><br></th>
         </tr>
     </table>
 
+    <div class="center">
+        <a href="#" onclick="convert()"> <img src="../documents/images/convert.png" width=60px height=60px /></a>
+        <a href="#" onclick="clearInputs()"> <img src="../documents/images/wipe.png" width=60px height=60px /></a>
+    </div>
 </body>
 
 </html>
