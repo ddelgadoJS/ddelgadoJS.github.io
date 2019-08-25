@@ -27,7 +27,7 @@ function convert() {
     }
     // Set conversion into each desired currency.
     for (var i = 0; i < inputFields.length; i++) {
-        if (inputFields[i].name != convertFrom.name && stars[i].style.opacity != '0.3') {
+        if (inputFields[i].name != convertFrom.name && stars[i].style.opacity == '1') {
             inputFields[i].value = "100";
         }
     }
