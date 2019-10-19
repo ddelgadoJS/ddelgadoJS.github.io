@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -8,6 +7,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -20,8 +20,8 @@
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="mainPage.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href=<?php echo 'mainPage.php'.'?user='.$_GET['user'] ?>><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href= <?php echo 'profile.php'.'?user='.$_GET['user'] ?>><i class="fas fa-user"></i><span>Profile</span></a></li>
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item" role="presentation"></li>
@@ -126,7 +126,7 @@
                             </li>
                             <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item dropdown no-arrow" role="presentation">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar1.jpeg"></a>
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600 small"><?php include 'database.php'; $myDB = new Database('root', '', 'lab_web_php'); echo $myDB->getData($_GET['user'], 'FullName')?></span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar5.jpeg"></a>
                                     <div
                                         class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
                                         <a
@@ -212,43 +212,37 @@
                                         <p class="text-primary m-0 font-weight-bold">Configuración de usuario</p>
                                     </div>
                                     <div class="card-body">
-                                        <form>
+                                        <form class="user" method="post">
                                             <div class="form-row">
                                                 <div class="col">
-                                                    <div class="form-group"><label for="username"><strong>Usuario</strong></label><input class="form-control" type="text" placeholder="user.name" name="username"></div>
+                                                    <div class="form-group"><label for="username"><strong>Usuario</strong></label><input id="username" class="form-control" type="text" placeholder="user.name" name="username" value="<?php $myDB = new Database('root', '', 'lab_web_php'); echo $myDB->getData($_GET['user'], 'Username')?>"></div>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="form-group"><label for="email"><strong>Email</strong><br></label><input class="form-control" type="email" placeholder="user@example.com" name="email"></div>
+                                                    <div class="form-group"><label for="email"><strong>Email</strong><br></label><input id="email" class="form-control" type="email" placeholder="user@example.com" name="email" value="<?php $myDB = new Database('root', '', 'lab_web_php'); echo $myDB->getData($_GET['user'], 'Email')?>"></div>
                                                 </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="col">
-                                                    <div class="form-group"><label for="first_name"><strong>Nombre</strong><br></label><input class="form-control" type="text" placeholder="John" name="first_name"></div>
+                                                    <div class="form-group"><label for="first_name"><strong>Nombre</strong><br></label><input id="first_name" class="form-control" type="text" placeholder="John" name="first_name" value="<?php $myDB = new Database('root', '', 'lab_web_php'); echo $myDB->getData($_GET['user'], 'FirstName')?>"></div>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="form-group"><label for="last_name"><strong>Apellido</strong><br></label><input class="form-control" type="text" placeholder="Doe" name="last_name"></div>
+                                                    <div class="form-group"><label for="last_name"><strong>Apellido</strong><br></label><input id="last_name" class="form-control" type="text" placeholder="Doe" name="last_name" value="<?php $myDB = new Database('root', '', 'lab_web_php'); echo $myDB->getData($_GET['user'], 'LastName')?>"></div>
                                                 </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="col">
-                                                    <div class="form-group"><label for="password_change"><strong>Nueva contraseña</strong><br></label><input class="form-control" type="text" placeholder="Password" name="password_change"></div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="form-group"><label for="password_change_repeat"><strong>Repite la contraseña</strong><br></label><input class="form-control" type="text" placeholder="Password" name="password_change_repeat"></div>
+                                                    <div class="form-group"><label for="phone"><strong>Teléfono</strong></label><input id="phone" class="form-control" type="text" placeholder="+506 1234 5678" name="phone" value="<?php $myDB = new Database('root', '', 'lab_web_php'); echo $myDB->getData($_GET['user'], 'Phone')?>"></div>
                                                 </div>
                                             </div>
-                                            <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Guardar cambios</button></div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="card shadow">
-                                    <div class="card-header py-3">
-                                        <p class="text-primary m-0 font-weight-bold">Datos de contacto</p>
-                                    </div>
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="form-group"><label for="phone"><strong>Teléfono</strong></label><input class="form-control" type="text" placeholder="+506 1234 5678" name="phone"></div>
-                                            <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Guardar cambios</button></div>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group"><label for="password_change"><strong>Nueva contraseña</strong><br></label><input id="password_change" class="form-control" type="password" placeholder="Password" name="password_change"></div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group"><label for="password_change_repeat"><strong>Repite la contraseña</strong><br></label><input id="password_change_repeat" class="form-control" type="password" placeholder="Password" name="password_change_repeat"></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group"><button class="btn btn-primary btn-sm" type="submit" onclick="updateUserData()">Guardar cambios</button></div>
                                         </form>
                                     </div>
                                 </div>
@@ -273,3 +267,29 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+    // Save current username before it's changed by the user.
+    var currentUsername = document.getElementById('username').value;
+
+    function updateUserData () {
+        var newUsername = document.getElementById('username').value;
+        $.ajax({
+        url:"profileAux.php", //the page containing php script
+        type: "POST", //request type
+        data: {
+                currentUsername: currentUsername,
+                newUsername: document.getElementById('username').value,
+                email: document.getElementById('email').value,
+                first_name: document.getElementById('first_name').value,
+                last_name: document.getElementById('last_name').value,
+                phone: document.getElementById('phone').value,
+                password_change: document.getElementById('password_change').value,
+                password_change_repeat: document.getElementById('password_change_repeat').value
+            },
+        success:function(result){
+            window.location.href = "http://localhost/scripts/profile.php?user=" + newUsername;
+        }
+        });
+    }
+</script>
