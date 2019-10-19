@@ -97,15 +97,27 @@ class Database {
         return false;
     }
 
-    public function modifyUser($username, $newUsername, $firstName, $lastName, $password, $email, $phone) {
+    public function modifyUser($currentUsername, $newUsername, $firstName, $lastName, $email, $phone) {
         $this->openConnection();
         if ($this->connection->query("UPDATE `users` SET
                                     `Username` = '$newUsername',
                                     `FirstName` = '$firstName',
                                     `LastName` = '$lastName',
-                                    `Password` = '$password',
                                     `Email` = '$email',
                                     `Phone` = '$phone'
+                                    WHERE `users`.`Username` = '$currentUsername';"
+        ) == true) {
+            $this->connection->close();
+            return true;
+        } else echo mysqli_error($this->connection);
+        $this->connection->close();
+        return false;
+    }
+
+    public function modifyUserPassword($username, $password) {
+        $this->openConnection();
+        if ($this->connection->query("UPDATE `users` SET
+                                    `Password` = '$password'
                                     WHERE `users`.`Username` = '$username';"
         ) == true) {
             $this->connection->close();
